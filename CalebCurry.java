@@ -324,7 +324,141 @@ public class Main {
     }
 }
 
-hour 3:57
+
+6/9/20
+
+package com.company;
+
+    public class Main {
+
+        public static void main(String[] args) {
+            int [][] grades ={
+                    {1, 5, 3},
+                    {8, 4, 2},
+                    {4, 6, 2}
+            };
+            System.out.println(grades.length);
+            System.out.println(grades[1].length);
+            for(int i = 0; i < grades.length; i++){
+                for (int k = 0; k < grades[i].length; k++){
+                    System.out.println(grades[i][k]);
+                }
+        }
+    }
+}
+
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+        public static void main(String[] args) {
+         List<Integer> grades = new ArrayList<Integer>();
+    }
+}
+
+package com.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+        public static void main(String[] args) {
+         List<Integer> grades = new ArrayList<Integer>();
+         grades.add(4);
+         grades.add(10);
+         grades.add(1, 7);
+         
+         grades.isEmpty();
+         System.out.println(grades.contains(7));
+         System.out.println(grades.indexOf(7));
+         System.out.println(grades.get(0));
+         System.out.println(grades.get(1));
+         System.out.println(grades.get(2));
+         
+         if(grades.contain(7) == true){
+             System.out.println("true");
+         }
+    }
+}
+
+package com.company;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+        public static void main(String[] args) {
+            List<Integer> allGrades = Arrays.asList(5, 3, 2, 6, 3);
+            int[] grades = new int [allGrades.size()];
+
+            for(int i = 0; i < allGrades.size(); i++);
+            {
+                grades[i] = allGrades.get(i);
+            }
+            System.out.println(Arrays.toString(grades));
+    }
+}
+
+package com.company;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Main {
+
+        public static void main(String[] args) {
+            List<Integer> allGrades = Arrays.asList(5, 3, 2, 6, 3);
+            Collections.sort(allGrades);
+            Collections.reverse(allGrades);
+
+            for(int grade : allGrades) {
+                System.out.println(allGrades);
+            }
+    }
+}
+
+package com.company;
+
+public class Main {
+
+        public static void main(String[] args) {
+           User user = new User();
+           user.firstName = "sub";
+           user.lastName = "scriber";
+            System.out.println(user.firstName);
+    }
+}
+
+package com.company;
+
+public class Main {
+
+        public static void main(String[] args) {
+           User user = new User();
+           user.firstName = "sub";
+           user.lastName = "scriber";
+           user.output(6);
+    }
+}
+package com.company;
+
+public class User {
+    public String firstName;
+    public String lastName;
+
+    public void output(int times){
+
+        for (int i = 0; i < times; i++){
+            System.out.println(firstName + " " + lastName);
+        }
+    }
+}
 
 
 
