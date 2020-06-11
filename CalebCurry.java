@@ -460,7 +460,94 @@ public class User {
     }
 }
 
+package com.company;
 
+public class User {
+    private String firstName;
+    public String lastName;
+
+    public void output(int times){
+
+        for (int i = 0; i < times; i++){
+            System.out.println(firstName + " " + lastName);
+        }
+    }
+    public String FirstName(){
+        return firstName.toUpperCase();
+    }
+    public void setFirstName(String fn){
+        firstName = fn;
+    }
+}package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        User user = new User();
+        user.setFirstName("Sub");
+        user.lastName = "scriber";
+        user.output(6);
+    }
+}
+
+package com.company;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+        User me = new User();
+        me.setFirstName("Justin");
+        me.setLastName("Dao");
+
+        User you = new User();
+        you.setFirstName("New");
+        you.setLastName("Friend");
+
+        List<User> users = new ArrayList<User>();
+        users.add(you);
+        users.add(me);
+
+        System.out.println(users.get(1).getFullName());
+    }
+}
+
+package com.company;
+
+public class User {
+    private String firstName;
+    private String lastName;
+
+
+    public String output(){
+        return"Hi, my name is " + firstName + " " + lastName  + ".";
+    }
+
+    public void output(int times){
+
+        for (int i = 0; i < times; i++){
+            System.out.println(firstName + " " + lastName);
+        }
+    }
+    public String FirstName(){
+        return firstName.toUpperCase();
+    }
+    public void setFirstName(String fn){
+        firstName = fn;
+    }
+    public String LastName(){
+        return firstName.toUpperCase();
+    }
+    public void setLastName(String fn){
+        firstName = fn;
+    }
+    public String getFullName(){
+        return firstName + " " + lastName;
+    }
+}
 
 
 
