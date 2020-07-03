@@ -4,13 +4,15 @@ public class PrimeFinder implements Runnable {
     public long target;
     public long prime;
     public boolean finished = false;
+    private Thread runner;
 
     PrimeFinder(long inTarget) {
         target = inTarget;
-        Thread runner = new Thread((Runnable) this);
-        runner.start();
+        if (runner == null) {
+            runner = new Thread((Runnable) this);
+            runner.start();
+        }
     }
-
     public void run() {
         long numPrimes = 0;
         long candidate = 2;
